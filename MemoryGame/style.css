@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  font-size: 20px;
+  padding-right: 150px;
+  padding-left: 80px;
+  background-color: #b3e0dc;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #4fb9af;
+  display: block;
+  transition: 0.3s;
+  margin: auto;
+}
+.nav a:hover::after {
+  width: 100%;
+}
+.nav #score {
+  font-weight: 400;
+}
+.match {
+  font-weight: 500;
+  font-size: 28px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), 0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.levels {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-top: 20px;
+}
+.box-head {
+  flex-basis: 22%;
+  border: 2px solid black;
+  height: 80px;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #4fb9af, #3bc4d2, #28777e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), 0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+.levels a {
+  flex-basis: 22%;
+  border: 2px solid black;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: linear-gradient(120deg, #4fb9af, #3bc4d2);
+  border-radius: 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: black;
+  position: relative;
+  transition: 1s;
+  backdrop-filter: blur(5px);
+}
+.levels a .box {
+  font-weight: 500;
+}
+.levels a:hover {
+  transform: translateY(-8px);
+}
